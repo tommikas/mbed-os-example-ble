@@ -1,0 +1,33 @@
+{
+    "name": "app",
+    "config": {
+        "sensor-type": {
+            "help"  : "Select the type of sensor to use. Options are SENSOR_TYPE_BME280 and SENSOR_TYPE_FAKE.",
+            "value" : "SENSOR_TYPE_BME280"
+        },
+        "sensor-value-update-interval": {
+            "help"  : "Set the interval between sensor value updates in milliseconds.",
+            "value" : 60000
+        },
+        "filesystem-support":  {
+            "help"  : "Enable filesystem for static storage of pairing information",
+            "value" : true
+        },
+        "flash-blockdevice-size": {
+            "help"  : "Size of flash block device used for filesystem",
+            "value" : "(32 * 1024)"
+        },
+        "ble-device-name": {
+            "help"  : "Name of the BLE device",
+            "value" : "\"BLE-WeatherStation\""
+        },
+        "ble-privacy": {
+            "help"  : "Use Private Resolvable address if filesystem support is enabled",
+            "value" : false
+        },
+        "ble-advertise-environmental-service": {
+            "help"  : "Enable or disable advertisement of the environmental sensing service",
+            "value" : true
+        }
+    }
+}

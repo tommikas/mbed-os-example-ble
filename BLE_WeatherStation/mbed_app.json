@@ -1,0 +1,14 @@
+{
+    "target_overrides": {
+        "*": {
+            "target.features_add"                   : ["BLE"],
+            "target.components_add"                 : ["FLASHIAP"],
+            "platform.stdio-baud-rate"              : 115200,
+            "platform.stdio-convert-newlines"       : true,
+            "rtos.main-thread-stack-size"           : 8192
+        },
+        "NRF52_DK": {
+            "target.device_has_remove": ["ITM"]
+        }
+    }
+}
